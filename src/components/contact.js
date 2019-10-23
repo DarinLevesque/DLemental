@@ -118,7 +118,7 @@ class Contact extends React.Component {
                 >
                     {this.showContactForm && (
                         <div className="col s12 m6">
-                            <form netlify>
+                            <form name="contact" netlify>
                                 <div className="field">
                                     <label>
                                         <span className="label text-tertiary">
