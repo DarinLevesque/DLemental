@@ -79,7 +79,7 @@ class IndexPage extends React.Component {
                     style={{ height: this.state.winHeight + "px" }}
                 >
                     <div className="intro container">
-                        <div className="main-title text-primary">
+                        <div className="main-title text-primary drop-shadow">
                             <svg
                                 width="90%"
                                 height="220px"
@@ -105,7 +105,7 @@ class IndexPage extends React.Component {
                                         height="100"
                                     />
                                     <image
-                                        xlinkHref="/images/wall.jpg"
+                                        xlinkHref="/images/circuit.jpg"
                                         height="100"
                                         width="100"
                                         y="0"

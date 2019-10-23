@@ -1,4 +1,5 @@
 import React from "react";
+import Obfuscate from "react-obfuscate";
 import SectionTitle from "./sectiontitle";
 import { StaticQuery, graphql } from "gatsby";
 import { PaperPlane, Mapmarker, Mobile, Envelope, Loading } from "./icons";
@@ -238,13 +239,22 @@ class Contact extends React.Component {
                                     <span className="icon">
                                         <Envelope />
                                     </span>
-                                    <a
+                                    <Obfuscate 
+                                        email={this.props.contact.mail}
+                                        headers={{
+                                            // cc: 'kate@acidburn.af',
+                                            // bcc: 'tanderson@metacortex.net',
+                                            subject: 'DarinLevesque.com feedback',
+                                            body: 'Let us connect'
+                                        }}
+                                        />
+                                    {/* <a
                                         href={
                                             "mailto:" + this.props.contact.mail
                                         }
                                     >
                                         {this.props.contact.mail}
-                                    </a>
+                                    </a> */}
                                 </li>
                             )}
                             {this.props.contact.phone && (
@@ -252,9 +262,10 @@ class Contact extends React.Component {
                                     <span className="icon">
                                         <Mobile />
                                     </span>
-                                    <a href={"tel:" + this.props.contact.phone}>
+                                    <Obfuscate tel={this.props.contact.phone} />
+                                    {/* <a href={"tel:" + this.props.contact.phone}>
                                         {this.props.contact.phone}
-                                    </a>
+                                    </a> */}
                                 </li>
                             )}
                             {this.props.contact.address && (
