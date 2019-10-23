@@ -4,7 +4,7 @@ let siteMetadata = {
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
     titleImage: `/images/circuit.jpg`,
-    introTag: `PHOTOGRAPHER | VIDEOGRAPHER`,
+    introTag: `Business Intelligence Engineer`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     author: `@DarinLevesque`,
     blogItemsPerPage: 10,
