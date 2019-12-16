@@ -1,3 +1,4 @@
+require('dotenv').config();
 let siteMetadata = {
     title: `Darin Levesque`,
     capitalizeTitleOnHome: true,
@@ -106,6 +107,21 @@ module.exports = {
             resolve: `gatsby-plugin-less`,
             options: {
                 strictMath: true
+            }
+        },
+        {
+            resolve: 'gatsby-theme-pocket',
+            options: {
+                pocketAccessToken: process.env.MY_ACCESS_TOKEN,
+                weeksOfHistory: 52,
+                tagFilter: false,
+                searchFilter: false,
+                pageTitle: 'What am I reading?',
+                pageDescription: 'These are articles that I have read, or saved to read',
+                seoTitle: 'gatsby-theme-pocket',
+                seoDescription: 'A Gatsby theme that adds your pocket app articles to your gatsby website',
+                seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
+                siteUrl: 'https://www.darinlevesque.com/'
             }
         }
     ]
