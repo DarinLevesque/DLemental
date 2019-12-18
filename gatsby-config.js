@@ -41,7 +41,7 @@ let siteMetadata = {
         },
         {
             name: "GitHub",
-            url: "https://github.com/akzhy/gatsby-starter-elemental"
+            url: "https://github.com/darinlevesque"
         }
     ],
     social: [
@@ -72,7 +72,7 @@ let siteMetadata = {
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
         mail: "darin@darinlevesque.com",
         phone: "603-326-8667",
-        address: "1234 \nLocation \nLocation"
+        address: "Washington D.C. Region \nUnited States"
     }
 };
 
