@@ -4,7 +4,7 @@ let siteMetadata = {
     capitalizeTitleOnHome: true,
     logo: `/images/logo.png`,
     icon: `/images/icon.png`,
-    titleImage: `/images/circuit.jpg`,
+    titleImage: `/images/sunsetclouds.png`,
     introTag: `Business Intelligence Engineer`,
     description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet accumsan arcu. Proin ac consequat arcu.`,
     author: `@DarinLevesque`,
@@ -108,21 +108,23 @@ module.exports = {
             options: {
                 strictMath: true
             }
-        },
-        {
-            resolve: 'gatsby-theme-pocket',
-            options: {
-                pocketAccessToken: process.env.MY_ACCESS_TOKEN,
-                weeksOfHistory: 52,
-                tagFilter: false,
-                searchFilter: false,
-                pageTitle: 'What am I reading?',
-                pageDescription: 'These are articles that I have read, or saved to read',
-                seoTitle: 'gatsby-theme-pocket',
-                seoDescription: 'A Gatsby theme that adds your pocket app articles to your gatsby website',
-                seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
-                siteUrl: 'https://www.darinlevesque.com/'
-            }
         }
+        // ,
+        // {
+        //     resolve: 'gatsby-theme-pocket',
+        //     options: {
+        //         pocketAccessToken: process.env.MY_ACCESS_TOKEN,
+        //         weeksOfHistory: 52,
+        //         tagFilter: false,
+        //         searchFilter: false,
+        //         pageTitle: 'What am I reading?',
+        //         pageDescription: 'These are articles that I have read, or saved to read',
+        //         seoTitle: 'Darins reading list',
+        //         seoDescription: 'A Gatsby theme that adds your pocket app articles to your gatsby website',
+        //         seoKeywords: ['gatsby', 'react', 'pocket', 'gatsby-theme', 'gatsby-plugin', 'articles'],
+        //         siteUrl: 'https://www.darinlevesque.com/',
+        //         customUrl: 'readings'
+        //     }
+        // }
     ]
 };

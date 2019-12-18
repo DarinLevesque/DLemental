@@ -105,11 +105,11 @@ class IndexPage extends React.Component {
                                         height="100"
                                     />
                                     <image
-                                        xlinkHref="/images/circuit.jpg"
+                                        xlinkHref="/images/moss.jpg"
                                         height="100"
                                         width="100"
                                         y="0"
-                                        preserveAspectRatio="none"
+                                        preserveAspectRatio="True"
                                     ></image>
                                 </pattern>
                                 <text
