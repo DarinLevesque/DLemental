@@ -1,4 +1,4 @@
-require('dotenv').config();
+require("dotenv").config();
 let siteMetadata = {
     title: `Darin Levesque`,
     capitalizeTitleOnHome: true,
@@ -82,6 +82,7 @@ module.exports = {
         `gatsby-plugin-sharp`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-react-helmet`,
+        `gatsby-plugin-netlify`,
         {
             resolve: `gatsby-transformer-remark`,
             options: {
@@ -112,19 +113,19 @@ module.exports = {
         {
             resolve: `gatsby-plugin-tawk`,
             options: {
-                tawkId: process.env.TAWK_ID,
+                tawkId: process.env.TAWK_ID
                 // get this from the tawk script widget
-            },
+            }
         },
-        { 
+        {
             resolve: `gatsby-plugin-purgecss`,
             options: {
-              printRejected: true, // Print removed selectors and processed file names
-              // develop: true, // Enable while using `gatsby develop`
-              // tailwind: true, // Enable tailwindcss support
-              // whitelist: ['whitelist'], // Don't remove this selector
-              // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
-              // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
+                printRejected: true // Print removed selectors and processed file names
+                // develop: true, // Enable while using `gatsby develop`
+                // tailwind: true, // Enable tailwindcss support
+                // whitelist: ['whitelist'], // Don't remove this selector
+                // ignore: ['/ignored.css', 'prismjs/', 'docsearch.js/'], // Ignore files/folders
+                // purgeOnly : ['components/', '/main.css', 'bootstrap/'], // Purge only these files/folders
             }
         }
         // ,
